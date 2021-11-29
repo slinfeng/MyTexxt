@@ -1,0 +1,566 @@
+/**
+ * input
+ */
+input,select,textarea,h1,h2,h3,h4,h5,h6,th{
+    color: #333;
+}
+.common input[type=radio]{
+    margin-bottom: 3px;
+}
+select[name=client_id]{
+    vertical-align: bottom;
+}
+select[name=official_name]{
+    border: none;
+    line-height: 1.2em;
+    height: 2.0em;
+    vertical-align: bottom;
+}
+span[name=our_position_type]:nth-of-type(2){
+    margin-left: 18em;
+}
+span.files-info{
+    padding: 0;
+}
+/*span[name=our_position_type]:nth-of-type(1),span[name=file_format_type]:nth-of-type(1){*/
+/*    width: 30%;*/
+/*    display: inline-block;*/
+/*}*/
+.btn-apply-request{
+    font-size:18px;
+    width: 22%;
+    height:50px;
+    display: inline-block;
+}
+.btn-file-border{
+    border: 1px solid #55ce63!important;
+}
+.content input:not(.search input){
+    border: none;
+}
+.content input:not(:read-only):not(.search input):not([type=button]){
+    background-color: #E8F0FE;
+}
+.content input.disable-input{
+    background-color: transparent!important;
+}
+.content input:not([type=button]):read-only{
+    background-color: white;
+}
+td.input-able label{
+    margin-bottom: 0;
+}
+td.input-able label,td.textarea-able label{
+    width: 100%;
+    height: 100%;
+    background-color: #E8F0FE;
+}
+td.input-able input{
+    width: 100%;
+    height: 100%;
+}
+td.textarea-able label{
+    margin-bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+td.textarea-able textarea{
+    width: 100%;
+}
+/**
+ * background color
+ */
+.backcolor-E8F0FE{
+    background-color:#E8F0FE;
+}
+.backcolor-white{
+    background-color: white!important;
+}
+/**
+ * seal
+ */
+.electronicSeal{
+    position: absolute;
+    top:20px;
+    right: 15px;
+    display: none;
+    width: 120px
+}
+/**
+ * textarea
+ */
+textarea:not([readonly]){
+    background-color:#E8F0FE;
+}
+textarea{
+    resize: none;
+    background-color: transpsarent;
+    border: none;
+    padding: 1px 0;
+    overflow-y:hidden;
+    margin-top: 7px;
+}
+
+/**
+ * title
+ */
+span[name=showed-by-client]{
+    width: calc( 100% - 9em );
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+a[name=index]:not([href]){
+    color: blue;
+    cursor: pointer;
+}
+a[name=index]:hover{
+    color:#0056B3;
+}
+.pointer-events-none{
+    color: #333!important;
+    pointer-events:none;
+}
+
+/**
+ * search
+ */
+div.filter-row  div.search{
+    width: 300px;
+    padding: 0 15px;
+}
+div.filter-row  div.search:nth-of-type(1){
+    width: 180px;
+}
+div.filter-row-extra .form-group{
+    width: 300px;
+}
+div.filter-row-extra div.search:nth-of-type(1){
+    width: 480px;
+}
+div.filter-row .form-control {
+    font-size: 14px!important;
+}
+/**
+ * table
+ */
+table {
+    border-collapse:collapse;
+}
+thead th {
+    background-color: white !important;
+    vertical-align:bottom!important;
+    text-align: center!important;
+}
+.create td,.create th,.print td,.print th,.edit td,.edit th{
+    box-sizing: content-box!important;
+}
+td,th{
+    padding: 0.25em;
+}
+table.table-border-none,table.table-border-none>tbody>tr,table.table-border-none>tbody>tr>td{
+    border: none;
+}
+.table-fixed{
+    table-layout: fixed;
+}
+.table td{
+    vertical-align:middle!important;
+}
+table.dataTable tbody td.select-checkbox:after{
+    top: 50% !important;
+}
+
+table.dataTable tbody td.select-checkbox:before{
+    top: 50% !important;
+}
+table.dataTable tbody tr:nth-of-type(2n){
+    background-color:#ffffff!important;
+}
+
+table.dataTable tbody tr:nth-of-type(2n+1){
+    background-color:#F6F6F6!important;
+}
+table.out-border-none{
+    border-collapse: collapse;
+    border: 0 solid #333;
+}
+table.out-border-none>tbody>tr>td,table.out-border-none>tbody>tr>th {
+    border-top: 0;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 0;
+}
+table.out-border-none>tbody>tr:last-of-type td,table.out-border-none>tbody>tr:last-of-type th {
+    border-bottom: 0;
+}
+table.out-border-none>tbody>tr>td:last-of-type {
+    border-right: 0;
+}
+/**
+ * other
+ */
+.content :focus {
+    outline: none;
+}
+.clear {
+    clear: both
+}
+.underline{
+    border-bottom: 2px #333 solid;
+}
+.daterangepicker td {
+    padding: 0 !important;
+}
+.rect {
+    width : 1rem;
+    height: 1rem;
+    background-color: #333;
+    display: inline-block;
+    border: 1px solid #333;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+.clip-0{
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.w-th-title{
+    width: 14%;
+}
+.w-45{
+    width: 45%!important;
+}
+.w-60{
+    width: 60%!important;
+}
+.w-70{
+    width: 70%!important;
+}
+.font-90pct{
+    font-size: 0.9em;
+}
+.create,.edit{
+    width: 75%;
+    margin: 0 auto;
+}
+/**
+ * create
+ */
+.print-receipt span[name=our_position_type] label {
+    width: 30%;
+}
+.print-receipt select[name=client_id]{
+    font-size: 18px;
+    height: 28px;
+    width: 60%;
+    margin-left: 20px;
+    border-color: #666;
+}
+span[name=cname]{
+    max-width:calc( 100% - 7em );
+}
+
+.print-receipt ul{
+    list-style: none;
+    display: block;
+    float: right;
+    text-align: left;
+}
+
+.print-receipt{
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 10% 1rem 10%;
+}
+
+.company-info {
+    min-width: 24em;
+    width: 36%;
+    float: right;
+    margin-top: -30px;
+}
+
+.company-info ul li:first-of-type{
+    font-size: 0.9em;
+}
+
+.company-info ul{
+    text-align: left;
+    padding-left: 0.5em;
+    margin-bottom: 0;
+}
+
+#bank-accounts{
+    font-size: 0.9em;
+}
+#bank-accounts td{
+    height: 2em;
+}
+
+#bank-accounts th{
+    text-align: center;
+}
+
+.select-align-center{
+    text-align:center;
+    text-align-last:center;
+}
+
+.bolder-border{
+    border: 2px solid #333;
+}
+.overflow-hide{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: '';
+    white-space: nowrap;
+}
+.overflow-break{
+    display:inline-block;
+    overflow: hidden;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.syagai{
+    background-color: white;
+    margin: 0 auto;
+    padding: 70px 10% 20px;
+}
+.syagai th{
+    width: 25%;
+}
+.format_B td,.format_B th{
+    height:45px;
+}
+.format_B th{
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: 800;
+}
+.format_B input:not([type=button]){
+    width: 15rem!important;
+}
+/**
+ * display
+ */
+.display-none{
+    display: none;
+}
+.display-inline{
+    display: inline!important;
+}
+
+/**
+ * code and date
+ */
+ul.manage-code{
+    padding-left: 0.5em;
+    width: 36%;
+    min-width: 24em;
+}
+
+.num {
+    margin: 0;
+}
+
+.num span{
+    display: inline-block;
+    width: 4.5em;
+}
+
+.num span:last-of-type{
+    text-align: justify;
+    text-align-last: justify;
+}
+
+span[name=addAndDelete]{
+    position: absolute;
+    top:7px;
+    right: -18px;
+    line-height: 18px;
+}
+
+/**
+ * Responsive
+**/
+@media only screen and (max-width: 1600px) {
+    html{
+        font-size: 14px;
+    }
+    .electronicSeal{
+        width: 104px;
+    }
+    .create,.edit{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1450px) {
+    html{
+        font-size: 13px;
+    }
+    .electronicSeal{
+        width: 96px;
+    }
+    .create,.edit{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    html{
+        font-size: 12px;
+    }
+    .electronicSeal{
+        width: 88px;
+    }
+    .create,.edit{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    html{
+        font-size: 15px;
+    }
+    .electronicSeal{
+        width: 112px;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    html{
+        font-size: 16px;
+    }
+    .electronicSeal{
+        width: 120px;
+    }
+}
+
+body{
+    font-size: 1rem!important;
+    color: #333;
+}
+textarea{
+    letter-spacing: 0.08em;
+}
+/**
+ * print
+ */
+.print label{
+    height: auto!important;
+}
+.print textarea{
+    background-color:white;
+    letter-spacing: unset;
+}
+.print textarea[name=remark_start]{
+    margin-bottom: 0.25em!important;
+}
+.print textarea[name=remark_end]{
+    margin-top: 0.25em!important;
+}
+.print{
+    font-family: 'MS Mincho';
+    width: 52em;
+    font-size: 16pt!important;
+    padding: 1em 4em 0 4em;
+}
+.print h1{
+    font-size: 2.25em;
+}
+
+.print h3{
+    font-size: 1.5em;
+}
+
+.print table{
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.print .w-th-title{
+    width: 118px;
+}
+.print #bank-accounts tr:nth-of-type(n+2) th{
+    width: 118px;
+}
+.print h1,.print h2,.print h3,.print h4,.print h5,.print h6{
+    font-family: "MS Mincho";
+}
+.print .bolder-border{
+    border: 2px solid #333;
+}
+.print .company-info {
+    min-width: 17.5em;
+    width: 17.5em;
+    margin-top: -35px;
+}
+.print .company-info li:last-of-type{
+    font-size: 15pt;
+    line-height: 30px;
+}
+.print .electronicSeal{
+    width: 37mm;
+}
+.print ul.manage-code{
+    padding-left: 40px;
+    width: auto;
+    min-width: auto;
+}
+.print label{
+    background-color: white!important;
+}
+.next-page{
+    page-break-before: always;
+    page-break-after: always;
+}
+.linePoint{
+    display: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+.linePoint:nth-of-type(2n){
+   color: green;
+}
+.linePoint:nth-of-type(2n+1){
+     color: red;
+ }
+input.print-tag{
+    border: none;
+    width: 112px;
+}
+.print .div-img{
+    position: absolute;
+    width: 6em;
+    height: 6em;
+    border: 1px dashed #bbb;
+}
+.print .div-img-content{
+    width: 5em;
+    height: 5em;
+    margin: auto;
+}
+.print .div-img-content span{
+    text-align: justify;
+    text-align-last: justify;
+    width: 5em;
+    line-height: 3em;
+    display: inline-block;
+}
+#options{
+    width: calc( 100% - 480px );
+    padding-right: 5px;
+}
+/*#options{*/
+/*    width: 190px;*/
+/*    padding-right: 5px;*/
+/*}*/
+/*.return_btn{*/
+/*    width: calc( 100% - 480px );*/
+/*    padding-right: 5px;*/
+/*}*/
+/*.return_btn_change{*/
+/*    width: calc( 100% - 670px );*/
+/*}*/

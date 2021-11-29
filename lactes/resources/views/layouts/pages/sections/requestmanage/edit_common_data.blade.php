@@ -1,0 +1,33 @@
+@include('layouts.pages.sections.requestmanage.action_edit')
+@section('id',$data->id)
+@section('date',$data->created_date)
+@section('our_position_type',$data->our_position_type)
+@section('file_format_type',$data->file_format_type)
+@section('client_id',$data->client_id)
+@can($__env->yieldContent('self_modify'))
+    @if($__env->yieldContent('page_status')=='expenseEdit')
+        @section('client_name',$data->cname)
+    @else
+        @section('client_name',$requestSettingGlobal['company_name'])
+    @endif
+@else
+    @section('client_name',$data->cname)
+@endcan
+{{--@section('client_name',$data->cname)--}}
+@section('official_name',$data->official_name)
+@if($data->file_format_type==0)
+    @section('bank_name',$data->request_setting->bank_name)
+    @section('branch_name',$data->request_setting->branch_name)
+    @section('branch_code',$data->request_setting->branch_code)
+    @section('account_type_name',$data->request_setting->account_type_name)
+    @section('account_num',$data->request_setting->account_num)
+    @section('account_name',$data->request_setting->account_name)
+    @section('request_setting_id',$data->request_setting_id)
+    @section('bank_name',$data->request_setting->bank_name)
+    @section('branch_name',$data->request_setting->branch_name)
+    @section('branch_code',$data->request_setting->branch_code)
+    @section('account_type_name',$data->request_setting->account_type_name)
+    @section('account_num',$data->request_setting->account_num)
+    @section('account_name',$data->request_setting->account_name)
+    @include('layouts.pages.sections.requestmanage.useinit_setting')
+@endif

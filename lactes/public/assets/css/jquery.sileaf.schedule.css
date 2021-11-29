@@ -1,0 +1,24 @@
+#schedule{
+    white-space: nowrap;
+    width: 100% ;
+
+}
+#items-canvas-body{
+    max-height: 730px;
+    overflow-y: auto;
+}
+#calendar-title{
+    width: 100%;
+    overflow: hidden;
+}
+#calendar-body,#items{
+    display: inline-block;
+}
+#items{
+    margin-right: 10px;
+}
+#calendar-body{
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: top;
+}

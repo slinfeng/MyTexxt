@@ -1,0 +1,5 @@
+@include('layouts.pages.sections.requestmanage.action_create')
+@section('route_save',route('clients.store'))
+@section('id',str_pad($nextID,4,'0',STR_PAD_LEFT))
+@section('our_role',$our_position_type)
+@include('layouts.pages.request_manage.client.page_create_or_edit')

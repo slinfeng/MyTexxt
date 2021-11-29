@@ -1,0 +1,100 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+
+#search_msg {
+    border: 1px solid #e3e3e3;
+    background-color: #fff;
+}
+.limit-search-wildcard {
+    min-width: 360px;
+    max-width: 360px;
+}
+
+input[class="initDistance"] {
+    width: 50px;
+    height: 20px;
+    margin: 1px 0;
+}
+
+textarea {
+    width: 100%;
+    border:none;
+    resize: none;
+    margin:0;
+    vertical-align:middle;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: block;
+}
+textarea:focus{
+    border:none;
+    outline:none;
+}
+
+div[name="button"]{
+    text-align: center;
+}
+div[name="button"] input{
+    text-align: center!important;
+    width: 150px;
+    border-color: white;
+}
+
+#float_text {
+    float: left;
+}
+
+.title_name{
+    padding: 10px 20px;
+    font-size: 26px;
+}
+#title_name {
+    text-align: center;
+    height: 50px;
+    width: 210px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.layout_border {
+    padding: 10mm;
+    border: 0.1mm solid black;
+}
+
+.right_input {
+    width: calc(100% - 7rem);
+    height: 24px;
+}
+
+.datetime{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.h-32{
+    height: 32%;
+}
+.layer-company-info div.company-info{
+    margin-top: -10px;
+}
+div.searchable-select-dropdown{
+    z-index: 100;
+}
+div.filter-row div.search:nth-of-type(1) {
+    width: 300px;
+}
+#options {
+    width: calc(100% - 880px);
+}
+div.filter-row div.search {
+    width: 200px;
+}
+/*.return_btn{*/
+/*    width: calc( 100% - 970px );*/
+/*    padding-right: 5px;*/
+/*}*/
+/*.return_btn_change{*/
+/*    width: calc( 100% - 1160px );*/
+/*}*/

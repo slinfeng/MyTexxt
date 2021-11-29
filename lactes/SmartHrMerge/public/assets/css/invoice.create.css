@@ -1,0 +1,166 @@
+th{
+    text-align: center !important;
+    font-weight: normal;
+}
+
+td,th{
+    border: 1px solid #333;
+}
+
+.bolder-border{
+    border: 3px solid #333;
+}
+
+/* 谷歌 */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* 火狐 */
+input{
+    -moz-appearance: textfield;
+    font-size: 1em;
+    background-color: #E8F0FE;
+}
+
+input[name=cname] {
+    text-decoration: #000;
+    border: solid;
+    border-width: 0 0 2px 0;
+}
+
+.amount-sum{
+    font-weight: bolder;
+}
+
+.width-project-th{
+    width: 6.5em;
+}
+
+textarea[name=remark_start]{
+    width: calc( 100% - 27em );
+}
+
+.project-info {
+    float: left;
+    margin-bottom: 2em;
+    width: calc( 100% - 27em );
+}
+
+.project-info label{
+    margin-bottom: 0;
+}
+
+select[name=contract_type]{
+    width: 5.75em;
+    height: 1.6em;
+}
+
+select[name=contract_type]+label{
+    float: right;
+    width: calc( 100% - 6em );
+}
+
+#invoice-details th:nth-of-type(1){
+    width: 6.5em;
+}
+#invoice-details th:nth-of-type(2){
+    width: 8em;
+}
+.layer-remark{
+    min-height: 3em;
+}
+#bank-accounts th {
+    width: calc(6.5rem + 1px);
+}
+/*.width-employee-period-border{*/
+/*    width: calc(6.5rem + 1px);*/
+/*}*/
+.width-employee-period{
+    width: 143px;
+}
+.width-employee-details{
+    width: 18.5em;
+}
+tr[name='employee_info'] td {
+    height: 48px;
+}
+.td-money-tax-in{
+    width: 6em;
+}
+.td-money-tax-out{
+    width: 5em;
+}
+.print .td-money-tax-out{
+    width: 5em;
+}
+.td-money-tax-in-border{
+    width: 6em;
+}
+.td-money-tax-out-border{
+    width: 5em;
+}
+table.project-end{
+    border: none;
+}
+table.project-end>tbody>tr>td{
+    border: none;
+    padding: 0;
+}
+.project-end>tbody>tr>td:last-of-type{
+    width: 36%;
+}
+.title{
+    min-width: 7em;
+}
+
+/**
+ * print
+ */
+.print{
+    background-color: white;
+}
+.print textarea[name=company_info]{
+    margin-top: 0!important;
+}
+.print .td-money-tax-in-border{
+    width: calc(6em + 2px);
+}
+.print .td-money-tax-out-border{
+    width: calc(4.5em);
+}
+.print textarea[name=remark_start]{
+    width: 25em;
+}
+.print .width-project-th{
+    width: 118px;
+}
+.print .width-project-th+td{
+    width: 18.5em;
+}
+.print #invoice-details th:nth-of-type(1){
+    width: 118px;
+}
+.print #invoice-details th:nth-of-type(2){
+    width: 143px;
+}
+.print #invoice-details th:nth-of-type(3){
+    width: calc(18.5em);
+}
+.print .width-employee-name{
+    width: 118px;
+}
+.print .title{
+    width: 8.1em;
+}
+.print .project-end>tbody>tr>td:last-of-type{
+    width: calc(20.1em + 2px);
+}
+.print #bank-accounts th {
+    width: 118px;
+}
+.print .project-info {
+    width: 57%;
+}

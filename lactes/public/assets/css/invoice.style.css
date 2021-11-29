@@ -1,0 +1,82 @@
+.invisible {
+    visibility: hidden;
+}
+
+.disable-input{
+    border: none;
+    pointer-events : none;
+    background-color: transparent;
+}
+
+table.dataTable th:nth-of-type(n+2),table.dataTable td:nth-of-type(n+2){
+    padding-left: 0;
+}
+
+table.dataTable thead th.select-checkbox:after{
+    top: 50% !important;
+}
+
+table.dataTable thead th.select-checkbox:before{
+    top: 50% !important;
+}
+
+table.dataTable thead th.select-checkbox:before, table.dataTable thead th.select-checkbox:after {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+
+table.dataTable thead th.select-checkbox:before {
+    content: ' ';
+    margin-top: -6px;
+    margin-left: -6px;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+table.dataTable tr.selected th.select-checkbox:after {
+    content: '\2714';
+    margin-top: -12px;
+    margin-left: -4px;
+    text-align: center;
+    text-shadow: 1px 1px #b0bed9, -1px -1px #b0bed9, 1px -1px #b0bed9, -1px 1px #b0bed9;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0.75em;
+    margin-top: -55px;
+    padding-bottom: 0;
+}
+
+.table.custom-table > tfoot > tr > th{
+    padding: 20px 8px 0!important;
+}
+
+.table.custom-table > tfoot > tr{
+    box-shadow : none;
+}
+
+#invoices-table input{
+    padding: 0;
+}
+
+#options{
+calc( 100% - 535px );
+}
+
+/*#options{*/
+/*    width: 305px;*/
+/*}*/
+
+/*.return_btn{*/
+/*    width: calc( 100% - 480px );*/
+/*    padding-right: 5px;*/
+/*}*/
+/*.return_btn_change{*/
+/*    width: calc( 100% - 785px );*/
+/*}*/
+

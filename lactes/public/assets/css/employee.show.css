@@ -1,0 +1,193 @@
+table,table tr,table td{
+    border: none;
+}
+
+table td{
+    padding-bottom: 10px;
+}
+table .title{
+      width: 30%;
+      color: #4f4f4f;
+}
+table .history{
+    margin-right: 20px;
+    color: grey;
+    text-decoration:line-through;
+}
+table .date-history{
+    margin-right: 20px;
+    color: grey;
+    text-decoration:line-through;
+}
+table .date-history+.date-japan{
+    margin-right: 20px;
+    color: grey;
+    text-decoration:line-through;
+}
+table .modify{
+    margin-right: 20px;
+    color: grey;
+}
+table .date-modify{
+    margin-right: 20px;
+    color: grey;
+}
+table .date-modify + .date-japan{
+    margin-right: 20px;
+    color: grey;
+}
+
+table .enter{
+    display: none;
+}
+.line-through{
+    text-decoration:line-through;
+}
+
+div[name="button"]{
+    text-align: center;
+}
+div[name="button"] input{
+    text-align: center!important;
+    width: 150px;
+    border-color: white;
+}
+#sideButton{
+    background-color: white;
+    width: 140px;
+    height: 50px;
+    box-shadow: 0 0 2px #888888;
+    border-radius: 20px 0 0 20px;
+    z-index: 100;
+    padding: 0;
+}
+#sideButton button{
+    border-radius:50%;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+}
+#sideButton a{
+    border-radius:50%;
+    height: 40px;
+    padding: 6px 0;
+    width: 40px;
+    vertical-align: middle;
+}
+#sideButton>span{
+    border-radius: 20px 0 0 20px;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+    background-color: #FF851A;
+    width: 30px;
+}
+.buttonHover{
+    position: fixed;
+    right: 0;
+}
+.buttonHide{
+    position: fixed;
+    right: -100px;
+}
+.submitButton{
+    color: white;
+    background-color:#55CE63;
+    border-color:#55CE63;
+}
+.cancelButton{
+    color: white;
+    background-color:#6C757D;
+    border-color:#6C757D;
+}
+.history{
+    margin-right: 20px;
+}
+.modify{
+    margin-right: 20px;
+    color: red;
+}
+.enter{
+    display: none;
+}
+.dependentTable th,td{
+    border: 1px black solid;
+}
+.redBorder{
+    border-color:red ;
+}
+label{
+    margin: 0;
+}
+.orange-color{
+    color: orange!important;
+}
+.red-color{
+    color: red!important;
+}
+.color-grey{
+    color: grey!important;
+}
+.profile-img-div{
+    position: absolute;
+    width: 120px;
+    background: #fff;
+    overflow: hidden;
+}
+.profile-img-div img{
+    width: 100%;
+}
+.name-phonetic .title{
+    display: none;
+}
+.name-phonetic .history,.name-phonetic .modify{
+    font-size: 18px;
+    padding: 0;
+}
+.name .title{
+    display: none;
+}
+.name .history,.name .modify{
+    font-size: 30px;
+    padding: 0;
+}
+.name-roman .title{
+    display: none;
+}
+.name-roman .history,.name-roman .modify{
+    font-size: 14px;
+}
+
+.adminModifyAfter{
+    display: none;
+}
+#base-model-relationship-select input[type=button]{
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px 5px 0 5px;
+    width: 100px;
+    height: 40px;
+}
+#base-model-relationship-select input[type=button]:nth-of-type(1){
+    background-color: #55CE63;
+    border: 1px solid #55CE63;
+}
+#base-model-relationship-select input[type=button]:nth-of-type(2){
+    background-color: #6C757D;
+    border: 1px solid #6C757D;
+}
+.relationAddButton{
+    margin: auto;
+}
+.select{
+    width: 100% !important;
+}
+.checkboxInsurance{
+    vertical-align: top;
+}

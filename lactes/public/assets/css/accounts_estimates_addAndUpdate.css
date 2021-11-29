@@ -1,0 +1,77 @@
+table{
+    width: 100%;
+}
+textarea[name=remark]{
+    width: 44rem;
+    font-size: 0.9em;
+}
+td,th{
+    border: 1px solid #333;
+}
+span[name=addAndDelete] a:hover{
+    color:red;
+}
+
+/*.linePoint{*/
+/*    display: none;*/
+/*    font-size: 12px;*/
+/*    font-weight: 800;*/
+/*}*/
+
+.company-info ul{
+    margin-bottom: 0;
+}
+
+#projectTable td{
+    height: 30px;
+}
+
+#bank-accounts {
+    font-size: 1em;
+}
+/**
+ * width
+ */
+.w-pro-a{
+    width: 50%;
+}
+.w-title-a{
+    width: 28%;
+}
+.w-title-b{
+    width: 14%;
+}
+.w-content-b{
+    width: 36%;
+}
+#bank-accounts tr:nth-of-type(n+2) th {
+    width: 14%;
+}
+textarea[name=remark_start]{
+    width: calc(100% - 5px);
+}
+.layer-end table:first-child{
+    min-height: 7.5em;
+}
+
+/**
+ * print
+ */
+.print .company-info{
+    margin-top: -60px;
+}
+.print select[name=bank_account_id]{
+    height: auto;
+}
+.print .w-pro-a{
+    width: 55%;
+}
+.print .w-title-a{
+    width: 118px;
+}
+.print .w-title-b{
+    width: 5.5em;
+}
+.print .w-content-b{
+    width: 15em;
+}

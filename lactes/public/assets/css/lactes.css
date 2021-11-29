@@ -1,0 +1,13 @@
+.headButton{
+    padding: 20px 30px 20px 0;
+    margin-left: 0 ;
+    border-top: 1px solid rgba(0,0,0,.125);
+    background-color: white;
+    position:fixed;
+    top:58px;
+    /*left:276px;*/
+    z-index: 10;
+}
+.fixedHeader-floating{
+    z-index: 20;
+}

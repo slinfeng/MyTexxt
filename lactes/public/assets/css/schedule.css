@@ -1,0 +1,375 @@
+#calendar-div table{
+    table-layout: fixed;
+    word-break: break-all;
+}
+#calendar-div .first-tr{
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+}
+#calendar-div .first-tr button{
+   margin: 5px 0;
+}
+#calendar-div .first-tr td:not(.memberSelectTd) span{
+    margin: 2px 0;
+    padding: 4px 0;
+    border: 1px #8b8a8a solid;
+    border-radius:5px;
+}
+#calendar-div .first-tr span:hover{
+    cursor : pointer;
+    background-color: #ececec;
+}
+#calendar-div .first-tr span img{
+    width: 30px;
+}
+#calendar-div .week-name{
+    height: 20px;
+    line-height: 20px;
+    background-color: #f7f7f7;
+}
+#calendar-div .week-name td{
+    border: grey 1px solid;
+}
+#calendar-div .week-body{
+    height: 120px;
+    background-color: #fff;
+    text-align: left;
+}
+#calendar-div .week-body td{
+    height: 120px;
+    border: grey 1px solid;
+    vertical-align: top;
+}
+#calendar-div .week-body td:nth-of-type(1){
+    background-color: rgb(255 224 224);
+}
+#calendar-div .week-body td:nth-of-type(7){
+    background-color: #e0e0ff;
+}
+#calendar-div .week-body span{
+    font-size: 18px;
+}
+#calendar-div .week-body .td-contents{
+    height: 100px;
+    overflow: auto;
+}
+#item-div {
+    margin: -15px 5px 0 0;
+    background-color: white;
+    padding: 5px 25px;
+    /*width: 300px;*/
+    position: relative;
+    display: inline-block;
+    min-height: 700px;
+    border: 1px solid #ededed;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+}
+#item-div .item-sidebar{
+    padding: 5px 0;
+    width: 200px;
+}
+#item-div table{
+    table-layout: fixed;
+    word-break: break-all;
+}
+#item-div .first-tr{
+    height: 30px;
+    line-height: 30px;
+    background-color: #f8f8f8;
+}
+#item-div .first-tr td{
+    padding: 5px 0 0 0 ;
+}
+#item-div .first-tr button{
+    margin: 5px 0;
+}
+#item-div .first-tr span{
+    padding: 4px 0;
+    border: none;
+    background-color: #f8f8f8;
+}
+#item-div .first-tr span:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+#item-div .first-tr span img{
+    width: 30px;
+}
+#item-div .week-name{
+    height: 20px;
+    line-height: 20px;
+    background-color: #fff;
+}
+#item-div .week-name td{
+    padding-top:5px ;
+    /*border: grey 1px solid;*/
+}
+#item-div .week-body{
+    height: 20px;
+    background-color: #fff;
+    border: 1px white solid;
+    /*text-align: left;*/
+}
+#item-div .week-body .last-month-day{
+    color: darkgrey;
+}
+#item-div .week-body td{
+    height: 20px;
+    /*border: grey 1px solid;*/
+    /*vertical-align: top;*/
+}
+#item-div .week-body td:nth-of-type(1):not(.last-month-day){
+    color: red;
+}
+#item-div .week-body td:nth-of-type(7){
+    color: blue;
+}
+#item-div .week-body td:nth-of-type(1):not(.last-month-day):hover,#item-div .week-body td:nth-of-type(7):hover{
+    color: white;
+}
+#item-div .week-body span{
+    font-size: 18px;
+}
+#item-div .this-month-day{
+    /*border: 1px white solid;*/
+}
+#item-div .this-month-day:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+#item-div .put-away-span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    border-top: 2px grey solid;
+    border-left: 2px grey solid;
+    transform: rotate(-45deg);
+    border-radius: 4px 0 0 0 ;
+}
+#item-div .unfold-span{
+    display: none;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    border-top: 2px grey solid;
+    border-right: 2px grey solid;
+    transform: rotate(45deg);
+    border-radius: 0 4px 0 0;
+}
+#item-div .put-away-span:hover{
+    cursor: pointer;
+}
+#item-div .unfold-span:hover{
+    cursor: pointer;
+}
+#item-div .select-td{
+    background-color: #109af5!important;
+    color: white!important;
+    font-weight: 800;
+    padding:0;
+}
+#item-div .put-away-div{
+    animation:put-away 0.1s forwards;
+    /* Firefox: */
+    -moz-animation:put-away 0.1s forwards;
+    /* Safari and Chrome: */
+    -webkit-animation:put-away 0.1s forwards;
+    /* Opera: */
+    -o-animation:put-away 0.1s forwards;
+}
+@keyframes put-away
+{
+    from {width: 200px}
+    to {width: 0}
+}
+
+@-webkit-keyframes put-away /* Safari and Chrome */
+{
+    from {width: 200px}
+    to {width: 0}
+}
+#item-div .unfold-div{
+    animation:unfold 0.1s forwards;
+    /* Firefox: */
+    -moz-animation:unfold 0.1s forwards;
+    /* Safari and Chrome: */
+    -webkit-animation:unfold 0.1s forwards;
+    /* Opera: */
+    -o-animation:unfold 0.1s forwards;
+}
+@keyframes unfold
+{
+    0%   {width: 0}
+    100% {width: 200px}
+}
+@-webkit-keyframes unfold /* Safari and Chrome */
+{
+    0%   {width: 0}
+    100% {width: 200px}
+}
+#calendar-select {
+    width: 370px;
+    height: 270px;
+    padding: 10px;
+    border-radius: 10px;
+    border: grey 1px solid;
+    background-color: white;
+    display: none;
+    z-index: 1199;
+    position: absolute;
+    top: 110px;
+    left: 30px;
+}
+#calendar-select>p{
+    margin: 5px 5px 0;
+    padding: 5px;
+    border: 1px grey dashed;
+    font-size: 13px;
+}
+#calendar-select table{
+    margin: 5px;
+    width: 160px;
+    table-layout: fixed;
+    word-break: break-all;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+#calendar-select table img{
+    width: 30px;
+}
+#calendar-select .week-name{
+    height: 20px;
+    line-height: 20px;
+    background-color: #f7f7f7;
+}
+#calendar-select .week-body td{
+    border: 1px white solid;
+    background-color:white;
+    font-size: 13px;
+    padding: 0 1px;
+}
+#calendar-select .week-body td:nth-of-type(1){
+    color: red;
+}
+#calendar-select .week-body td:nth-of-type(7){
+    color: blue;
+}
+#calendar-select .week-body td:hover{
+    cursor: pointer;
+}
+#calendar-select .select-td{
+    border-color: grey!important;
+    background-color: yellow!important;
+    font-weight: 800;
+    padding:0;
+}
+#calendar-select .select-calendar-show{
+    margin-left: 10px;
+}
+#calendar-select .select-calendar-show p{
+    margin: 18px 0 0 0 ;
+    font-size: 12px;
+    color: #1F8FEF;
+}
+#calendar-select .select-calendar-show textarea{
+    width: 160px;
+    height: 300px;
+    resize:none;
+    border: 1px grey solid ;
+}
+
+#context-menu li:hover{
+    background-color: #0ba408;
+}
+#schedule-title .year-month-day{
+    width: 240px;
+    font-size: 24px;
+    padding: 5px 0 0 5px;
+    color: #1F8FEF;
+    vertical-align: bottom;
+}
+#schedule-title .select-day-btn{
+    margin: 0 30px 20px 0;
+}
+ #schedule-title .select-day-btn span{
+    display: inline-block;
+    position: relative;
+    width: 65px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    border: grey 1px solid;
+    margin-left: 2px;
+}
+#schedule-title .select-day-btn span:last-of-type{
+    padding: 0 20px 0 10px;
+}
+#schedule-title .select-day-btn span:hover{
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+#schedule-title .select-day-btn img{
+    width: 30px;
+    position: absolute;
+
+}
+#schedule-title .select-day-btn span:nth-of-type(1) img,#schedule-title .select-day-btn span:nth-of-type(2) img{
+    top: 0;
+    left: -5px;
+}
+#schedule-title .select-day-btn span:nth-of-type(3) img{
+    top: 0;
+    right: -5px;
+}
+#schedule-title .scale-adjust{
+    height: 30px;
+    margin: 0 10px 0 20px;
+}
+#schedule-title .scale-adjust .scale-title{
+    height: 30px;
+    padding-top: 5px;
+    color: red;
+}
+#schedule-title .scale-adjust .adjustment-scale{
+    margin: 0 20px;
+    position: relative;
+}
+#schedule-title .scale-adjust .adjustment{
+    display: inline-block;
+    background-color: red;
+    border: #d0d0d0 2px solid;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    z-index: 100;
+}
+#schedule-title .scale-adjust .scale{
+    display: inline-block;
+    background-color: #d0d0d0;
+    border: none;
+    width: 210px;
+    height: 5px;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    z-index: 10;
+}
+.color-btn .btn{
+    height: 25px;
+    width: 35px;
+    margin-top: 5px;
+}
+.user-checkbox input[type=checkbox]{
+    margin: 0 5px 0 15px;
+}

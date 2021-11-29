@@ -1,0 +1,24 @@
+$.fn.dataTable.defaults.oLanguage = {
+    "sProcessing": "処理中...",
+    "sLengthMenu": "_MENU_ 件表示",
+    "sZeroRecords": "一致するレコードがありません",
+    "sInfo": " _TOTAL_ 件中 _START_ から _END_ まで表示",
+    "sInfoEmpty": " 0 件中 0 から 0 まで表示",
+    "sInfoFiltered": "（全 _MAX_ 件より抽出）",
+    "sInfoPostFix": "",
+    "sSearch": "検索:",
+    "sUrl": "",
+    "sEmptyTable": "テーブルにデータがありません",
+    "sLoadingRecords": "読み込み中...",
+    "sInfoThousands": ",",
+    "oPaginate": {
+        "sFirst": "先頭",
+        "sPrevious": "前",
+        "sNext": "次",
+        "sLast": "最終"
+    },
+    "oAria": {
+        "sSortAscending": ": 列を昇順に並べ替えるにはアクティブにする",
+        "sSortDescending": ": 列を降順に並べ替えるにはアクティブにする"
+    }
+};

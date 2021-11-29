@@ -1,0 +1,88 @@
+.table-left-setting input[type=radio]{
+    vertical-align: middle;
+}
+.table-left-setting input[type=checkbox]{
+    vertical-align: middle;
+}
+.table-left-setting tr td{
+    padding: 10px;
+}
+.table-left-setting tr td:nth-of-type(1){
+    text-align: right;
+}
+label{
+    margin: 0;
+}
+.table-color{
+    margin: 20px;
+}
+.table-color td{
+    padding: 10px 20px;
+}
+.table-color .btn,#color_add_modal .form-group .btn,#color_update_modal .form-group .btn{
+    height: 25px;
+    width: 35px;
+}
+#color-table .btn{
+    height: 25px;
+    width: 35px;
+    margin-right: 5px;
+}
+table td{
+    height: 22px!important;
+}
+table.dataTable thead th.select-checkbox:before{
+    content: ' ';
+    margin-top: -2px;
+    margin-left: -6px;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+table.dataTable thead th.select-checkbox:before, table.dataTable thead th.select-checkbox:after{
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+table.dataTable tbody td.select-checkbox:before{
+    content: ' ';
+    margin-top: -2px;
+    margin-left: -6px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+table.dataTable tbody tr:nth-of-type(2n+1){
+    background-color: #F6F6F6!important;
+}
+table.dataTable tbody tr:nth-of-type(2n){
+    background-color: #ffffff!important;
+}
+.order-input{
+    /*display: none;*/
+    max-width: 5em;
+    height: 22px;
+    padding: 0;
+    background-color: #E8F0FE;
+    border: none;
+}
+#member_options{
+    display: none;
+}
+#color_options{
+    display: none;
+}
+.order-input{
+    display: none;
+}
+input[type=radio]{
+    vertical-align: middle;
+}
+.role-action span{
+    line-height: 22px;
+}
+select.form-control[multiple], select.form-control[size] {
+    height: 400px!important;
+}
